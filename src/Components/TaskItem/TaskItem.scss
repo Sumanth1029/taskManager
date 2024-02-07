@@ -1,0 +1,68 @@
+.taskItem {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 10px 20px;
+  padding: 20px;
+  z-index: 0;
+  .taskTitle {
+    font-size: 25px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+    padding-bottom: 5px;
+    color: rgb(213, 213, 213);
+    margin-bottom: 5px;
+  }
+  .taskDesc {
+    color: rgb(143, 143, 143);
+    margin-bottom: 20px;
+  }
+  .mark-complete {
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 15px;
+  }
+  .mark-complete:hover {
+    color: rgb(203, 161, 255);
+  }
+
+  .mark-active {
+    color: rgb(203, 161, 255);
+    cursor: pointer;
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 15px;
+  }
+
+  .mark-active:hover {
+    color: rgb(196, 196, 196);
+  }
+  .high-pri {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.242);
+  }
+  .med-pri {
+    color: yellow;
+    background-color: rgba(255, 238, 0, 0.242);
+  }
+  .low-pri {
+    color: green;
+    background-color: rgba(0, 255, 64, 0.179);
+  }
+
+  .high-pri,
+  .low-pri,
+  .med-pri {
+    display: inline-block;
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+}
+.completedTask {
+  opacity: 0.5;
+  background-color: rgb(27, 27, 27);
+}
