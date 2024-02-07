@@ -4,7 +4,7 @@ import { TaskListContext } from "../../Contexts/context";
 
 const TaskItem = ({ task }) => {
   const { changeStatus } = useContext(TaskListContext);
-  const [text, settext] = useState("");
+  const [, settext] = useState("");
 
   const handleClick = () => {
     changeStatus(task.uid);
